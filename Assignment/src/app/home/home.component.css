@@ -1,0 +1,16 @@
+.overlay-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #555;
+    font-weight: bold;
+    font-size: 24px;
+    opacity: 0;
+    transition: opacity 0.7s ease-in-out; /* Add transition effect */
+}
+
+.img-container:hover .overlay-text {
+    opacity: 1; /* Show the text on hover */
+}
