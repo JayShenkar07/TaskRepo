@@ -1,51 +1,53 @@
 <!-- <p>details works!</p> -->
 <div class="container my-5">
-	<div class="row p-4 pb-0 pe-lg-0 pt-lg-5 align-items-center rounded-3 border shadow-lg">
-		<div class="col-lg-5 p-3 p-lg-5 " style="position: relative; left: 13%; bottom: 13%;">
-			<div class="lc-block mb-3">
-				<div editable="rich">
-					<h2 class="fw-bold display-5" style="font-size: 32px;">Book Name&nbsp;<p></p>
-						<p></p>
-					</h2>
-				</div>
-			</div>
-<br>
-			<div class="lc-block mb-3">
-				<div editable="rich">
-					<table style="width: 100%;">
-						<tr>
-							<!-- <td style="width: 50%; vertical-align: top;">
-								<p class="lead" style="font-size: 25px;">Discover a wealth of insights and expertise in the world of technology. From coding essentials to cutting-edge innovations, these books offer invaluable resources for aspiring developers, tech enthusiasts, and industry professionals alike. Dive into the digital realm and empower yourself with the latest advancements.</p>
-							</td> -->
-							<td style="width: 80%; vertical-align: top; font-size: 20px;">
-								<table style="width: 100%;">
-									<tr>
-										<td style="padding-right: 10px; width: 150px;">ISBN:</td>
-										<td>852</td>
-									</tr>
-									<tr>
-										<td style="padding-right: 10px;">Pages:</td>
-										<td>123</td>
-									</tr>
-									<tr>
-										<td style="padding-right: 10px;">Authors:</td>
-										<td>85</td>
-									</tr>
-								</table>
-							</td>
-						</tr>
-					</table>
-				</div>
-			</div>
-			
-			<br>
+    <div class="row p-4 pb-0 pe-lg-0 pt-lg-5 align-items-center rounded-3 border shadow-lg">
+        <div class="col-lg-5 p-3 p-lg-5" style="position: relative; left: 13%; bottom: 13%;">
+            <div class="lc-block mb-3">
+                <div editable="rich">
+                    <h2 class="fw-bold display-5" style="font-size: 32px;">{{bookDetails.title}}</h2>
+                </div>
+            </div>
+            <br>
 
-			<div class="lc-block d-grid gap-2 d-md-flex justify-content-md-start"><a class="btn btn-primary px-4 me-md-2 " href="#" role="button" routerLink="/books">Get Back</a>
-				
-			</div>
-		</div>
-		<div class="col-lg-4 offset-lg-1 p-0 overflow-hidden " style="position: relative; bottom: 10%;">
-			<div class="lc-block"><img class="rounded-start w-100" src="https://i.ibb.co/5swpWNS/vecteezy-flat-vector-redhead-girl-sitting-at-a-table-and-reading-a-book-22634092-removebg-preview.png" alt="Photo by Diego PH" width="720" ></div>
-		</div>
-	</div>
+            <div class="lc-block mb-3">
+                <div editable="rich">
+                    <table style="width: 100%;">
+                        <tr>
+                            <td style="width: 80%; vertical-align: top; font-size: 20px;">
+                                <table style="width: 100%;">
+                                    <tr>
+                                        <td style="padding-right: 10px; width: 150px;">ISBN: </td>
+                                        <td>{{bookDetails.isbn}}</td>
+                                    </tr>
+                                    <tr style="margin-left: 25px;">
+                                        <td style="padding-right: 10px;">Pages:</td>
+                                        <td>{{bookDetails.pageCount}}</td>
+                                    </tr>
+                                    <tr style="margin-left: 25px;">
+                                        <td style="padding-right: 10px;">Authors: </td>
+                                        <td>
+                                            <span *ngFor="let author of bookDetails.authors; let last = last">
+                                                {{ author }}{{ !last ? ', ' : '' }}
+                                            </span>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+
+            <br>
+
+            <div class="lc-block d-grid gap-2 d-md-flex justify-content-md-start">
+                <a class="btn btn-primary px-4 me-md-2" href="#" role="button" routerLink="/books">Get Back</a>
+            </div>
+        </div>
+        <div class="col-lg-4 offset-lg-1 p-0 overflow-hidden" style="position: relative; bottom: 10%;">
+            <div class="lc-block">
+                <img class="rounded-start w-100" src="https://i.ibb.co/5swpWNS/vecteezy-flat-vector-redhead-girl-sitting-at-a-table-and-reading-a-book-22634092-removebg-preview.png" alt="Photo by Diego PH" width="720">
+            </div>
+        </div>
+    </div>
 </div>
