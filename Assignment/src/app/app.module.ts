@@ -10,6 +10,7 @@ import { BooksComponent } from './books/books.component';
 import { DetailsComponent } from './details/details.component';
 
 import { HttpClientModule } from '@angular/common/http';
+import { InvalidPageComponent } from './invalid-page/invalid-page.component';
 
 
 @NgModule({
@@ -20,6 +21,7 @@ import { HttpClientModule } from '@angular/common/http';
     HomeComponent,
     BooksComponent,
     DetailsComponent,
+    InvalidPageComponent,
 
   ],
   imports: [
