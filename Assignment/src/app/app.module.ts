@@ -9,6 +9,9 @@ import { HomeComponent } from './home/home.component';
 import { BooksComponent } from './books/books.component';
 import { DetailsComponent } from './details/details.component';
 
+import { HttpClientModule } from '@angular/common/http';
+
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -16,14 +19,16 @@ import { DetailsComponent } from './details/details.component';
     FooterComponent,
     HomeComponent,
     BooksComponent,
-    DetailsComponent
+    DetailsComponent,
+
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule,
   ],
   providers: [
-    provideClientHydration()
+    // provideClientHydration()
   ],
   bootstrap: [AppComponent]
 })

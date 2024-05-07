@@ -1,6 +1,14 @@
-/* .row {
-    margin-left: 10%;
-    margin-right:10%;
-} */
+.row {
+    margin-left: 5%;
+    margin-right: 5%;
+}
+a {
+    color: inherit; 
+    text-decoration: none; 
+}
 
-    
+a:hover {
+    color: rgb(156, 33, 11); /* Changes text color to blue */
+    /* text-decoration: underline; Underlines the text */
+    cursor: pointer; /* Changes cursor to pointer */
+  }
