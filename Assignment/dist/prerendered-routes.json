@@ -1,0 +1,7 @@
+{
+  "routes": [
+    "/",
+    "/books",
+    "/books/details"
+  ]
+}
