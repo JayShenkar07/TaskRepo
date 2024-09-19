@@ -1,35 +1,27 @@
-# BooksFolio
+# Assignment
 
-- The application offers an innovative solution for users interested in exploring books and its details with easy to use UI
--  This allows users to view a list of books and interactively explore its details such as it's ISBN, Page Count and Authors
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.0.3.
 
-## Deploy Link
+## Development server
 
-- You can access the deployed version of this project here - [Deploy Link](https://booksfolio.netlify.app/)
+Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
 
-- Search in your browser - [https://booksfolio.netlify.app/](https://booksfolio.netlify.app/)
+## Code scaffolding
 
-## Screenshots
+Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
-### 1. Homepage -
-![App Screenshot](https://i.ibb.co/QcNXM65/Home1.png)
+## Build
 
-![App Screenshot2](https://i.ibb.co/2WFChQH/Home2.png)
+Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
 
-### 2. Books page
-![App Screenshot](https://i.ibb.co/NYgj1DD/Books-Page.png)
+## Running unit tests
 
-### 3. Details page
-![App Screenshot](https://i.ibb.co/XV2ZwJh/Details-Page.png)
+Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
-### 4. 404: Page not found 
-![App Screenshot](https://i.ibb.co/fk3nhns/Page-Not-Found.png)
+## Running end-to-end tests
 
-## How to run the project ?
-To run the project use following steps:
+Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
 
-- Clone the repository https://github.com/JayShenkar07/TaskRepo.git
-- Navigate to project directory with cd your-project-dir-name
-- Run npm install
-- Install Bootstrap with npm install --save bootstrap
-- To start the project, run ng serve --o
+## Further help
+
+To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
