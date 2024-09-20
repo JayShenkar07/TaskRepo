@@ -5,7 +5,7 @@ pipeline {
     environment {
         bucket = "book-store-frontend-1"
         BASE_PATH = "/var/lib/jenkins/workspace/dev/bookstore-app"
-        region = "us-east-1"
+        region = "ap-south-1"
     }
 
     tools {
