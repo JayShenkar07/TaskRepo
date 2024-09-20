@@ -40,7 +40,7 @@ pipeline {
             steps {
                 script {
                     withAWS(region: "${region}", credentials: 'jay-aws-creds') {
-                        s3Upload(bucket: "${bucket}", includePathPattern: '**/*', workingDir: 'dist/TaskRepo', excludePathPattern: '**/node-modules')
+                        s3Upload(bucket: "${bucket}", includePathPattern: '**/*', workingDir: 'dist/browser', excludePathPattern: '**/node-modules')
                     }
                 }
                 script {
