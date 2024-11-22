@@ -3,7 +3,7 @@ pipeline {
     agent any
 
     environment {
-        bucket = "book-store-frontend-1"
+        bucket = "book-store-frontend-2"
         BASE_PATH = "/var/lib/jenkins/workspace/dev/bookstore-app"
         region = "ap-south-1"
     }
